@@ -1,0 +1,25 @@
+{
+    "parserOtions" : {
+        "ecmaVersion" : 2020,
+        "sourceType" : "module",
+        "ecmaFeatures" : {
+            "jsx" : true
+        }
+    },
+    "env" : {
+        "broser" : true,
+        "node" : true,
+        "es6" : true
+    },
+    "extends" : [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins":[
+        "import",
+        "react-hooks"
+    ],
+    "rules" : {
+        
+    }
+}
