@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { useState, useCallback } from 'react';
 import styled from 'styled-components';
 
+// styled.div하게 되면 div태그(div컴포넌트)로 바꿔줌. 안에는 CSS적듯이 CSS형식으로 작성할 것.
 const ButtonWrapper = styled.div`
-    margin-top :
+    margin-top : 10px;
 `;
 const FormWrapper = styled(Form)`
     padding : 10px;
@@ -41,10 +42,10 @@ const LoginForm = ({setIsLoggedIn}) => {
                         required 
                 />
             </div>
-            <div>
+            <ButtonWrapper>
                 <Button type = "primary" htmlType = 'submit' loading = {false}>로그인</Button>
                 <Link href='/signup'><a><Button>회원가입</Button></a></Link>
-            </div>
+            </ButtonWrapper>
         </FormWrapper>
     );
 
