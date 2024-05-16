@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card, Button, List} from 'antd'; 
 import { StopOutlined } from '@ant-design/icons';
 
-const followingList = ({ header, data}) => {
+const FollowingList = ({ header, data}) => {
     return (
         <List 
         style={{ marginBotton : '20px'}}
@@ -24,9 +24,9 @@ const followingList = ({ header, data}) => {
     )
 };
 
-followingList.propTypes = {
+FollowingList.propTypes = {
     header:PropTypes.string.isRequired,
     data:PropTypes.array.isRequired,
 }
 
-export default followingList;
+export default FollowingList;
